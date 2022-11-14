@@ -1,3 +1,4 @@
+# %%
 import igrow_utils
 import postprocess
 
@@ -34,7 +35,7 @@ columns1 = [
 postprocess.c_scatter_plots(
     df,
     title="singlelayer",
-    path="images/singlayer.png",
+    path="images/singlelayer.png",
     columns0=columns0,
     columns1=columns1,
 )

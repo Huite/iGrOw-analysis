@@ -10,18 +10,6 @@ np.random.seed(12345)
 
 # %%
 
-df = postprocess.extract_columns(
-    igrow_utils.read_igrow_output(f"output/singlelayer-output.csv")
-)
-df = postprocess.assign_analytical_resistance(df)
-
-results = postprocess.finite_volume_heads(df, celldrain_columns=["c_entry", "c_iGrOw"])
-
-# %%
-
-
-# %%
-
 
 def generate_clay_parameters(n):
     kxx = igrow_utils.rand_within(n, 0.5, 1.0)
